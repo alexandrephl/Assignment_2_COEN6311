@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 500px; margin: 0 auto; padding-top: 50px; }
+        .form-container, .options-container { float: left; width: 48%; margin: 1%; }
+        .form-container label, .form-container input { display: block; margin-bottom: 10px; width: 100%; }
+        .form-container input[type="text"], 
+        .form-container input[type="email"], 
+        .form-container input[type="password"] { padding: 8px; }
+        .form-container input[type="submit"] { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        .form-container input[type="submit"]:hover { background-color: #45a049; }
+        .options-container { padding-left: 20px; }
+        .options-container h3 { margin-bottom: 10px; }
+        .options-container input[type="radio"], .options-container input[type="checkbox"] { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <div class="form-container">
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="options-container">
+            <h3>Stay informed about the latest updates and events!</h3>
+            <input type="radio" id="no" name="updates" value="no">
+            <label for="no">No</label>
+            
+            <input type="radio" id="yes" name="updates" value="yes" checked>
+            <label for="yes">Yes</label>
+            
+            <div>
+                <input type="checkbox" id="events_notifications" name="events_notifications" checked>
+                <label for="events_notifications">Events Notifications</label>
+            </div>
+            <div>
+                <input type="checkbox" id="department_updates" name="department_updates">
+                <label for="department_updates">Department Updates</label>
+            </div>
+            <div>
+                <input type="checkbox" id="course_sequences" name="course_sequences">
+                <label for="course_sequences">Course Sequences and Prerequisites</label>
+            </div>
+            <div>
+                <input type="checkbox" id="career_resources" name="career_resources" checked>
+                <label for="career_resources">Career Development Resources</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
