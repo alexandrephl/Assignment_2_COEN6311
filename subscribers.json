@@ -1,0 +1,15 @@
+{
+    "subscriber_id": "S001",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "subscribed_events": [
+        {
+            "event_id": "E001",
+            "subscription_date": "2024-08-14T15:30:00Z"
+        },
+        {
+            "event_id": "E002",
+            "subscription_date": "2024-08-15T10:00:00Z"
+        }
+    ]
+}

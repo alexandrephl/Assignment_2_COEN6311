@@ -1,0 +1,16 @@
+{
+    "event_id": "E001",
+    "event_name": "Orientation Day",
+    "event_date": "2024-09-01T10:00:00Z",
+    "event_description": "An introduction to the department and the course structure.",
+    "subscribers": [
+        {
+            "subscriber_id": "S001",
+            "subscription_date": "2024-08-14T15:30:00Z"
+        },
+        {
+            "subscriber_id": "S002",
+            "subscription_date": "2024-08-14T16:00:00Z"
+        }
+    ]
+}
